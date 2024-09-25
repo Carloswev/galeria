@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffe1f0, #ffffff);
+}
+
+header {
+    background-color: #ff79c6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.upload-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.drop-zone {
+    display: inline-block;
+    padding: 20px;
+    border: 2px dashed #ff79c6;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.drop-zone:hover {
+    background-color: #ffb3d9;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.photo-card {
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.photo-card img:hover {
+    transform: scale(1.05);
+}
+
+.photo-info {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #ff79c6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #ff3d98;
+}
+
+.gallery-section {
+    padding: 20px;
+}
+
+.photos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ff79c6;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
